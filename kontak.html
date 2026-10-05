@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- JUDUL HALAMAN WEB -->
+        <title>DESA WISATA & SANGGAR SENI "BUMI KANDUNG"</title>
+
+        <!-- SEO -->
+        <meta name="description"
+            content="Desa Wisata & Sanggar Seni Bumi Kandung adalah kawasan wisata edukasi budaya yang mengusung konsep kelestarian tradisi Jawa Tengah." 
+            />
+
+        <!-- LINK ICON DAN STYLE.CSS -->
+        <link rel="icon" type="image/jpg" href="favicon.jpg" />
+        <link rel="stylesheet" href="style.css" />
+
+        <!-- LINK FONTAWESOME & GOOGLE FONTS -->
+        <link rel="stylesheet" 
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+        />
+        <link rel="preconnect" 
+            href="https://fonts.googleapis.com" 
+        />
+        <link rel="preconnect" 
+            href="https://fonts.gstatic.com" crossorigin 
+        />
+        <link  
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" 
+            rel="stylesheet"
+        />
+    </head>
+
+    <body>
+        <!-- HALAMAN UTAMA WEB -->
+        <header class="halaman-utama">
+            <div class="logo-brand">
+                <h1 class="nama-bisnis">bumi kandung</h1>
+                <p>desa wisata & sanggar seni</p>
+            </div>
+
+            <nav class="link-halaman">
+                <ul>
+                    <li><a href="index.html">beranda</a></li>
+                    <li><a href="katalog.html">katalog</a></li>
+                    <li><a href="kontak.html">kontak</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- ISI HALAMAN WEB -->
+        <main class="isi-halaman">
+            <!-- ALAMAT & KONTAK -->
+            <section class="alamat-kontak">
+                <h2>alamat & kontak lengkap</h2>
+                <div class="kotak-informasi">
+                    <p class="judul-info">alamat :</p>
+                    <p class="detail-info">jl. heritage budaya no. 05, desa karanganyar, kecamatan musuk, kabupaten boyolali, jawa tengah 57316</p>
+                </div>
+
+                <div class="kotak-informasi">
+                    <p class="judul-info">petunjuk arah :</p>
+                    <p class="detail-info">20 menit dari alun - alun boyolali arah lereng gunung merbabu.</p>
+                </div>
+
+                <div class="kotak-informasi">
+                    <p class="judul-info">nomor telepon :</p>
+                    <p class="detail-info">
+                        <a href="tel:+6282144556677">+62 821-4455-6677</a>
+                    </p>
+                </div>
+
+                <div class="kotak-informasi">
+                    <p class="judul-info">email :</p>
+                    <p class="detail-info">
+                    <a href="mailto:sapa@bumikandung.id">sapa@bumikandung.id</a>
+                    </p>
+                </div>
+
+                <div class="kotak-informasi">
+                    <p class="judul-info">jadwal operasional wisata :</p>
+                    <ul>
+                        <li>senin - minggu : 08:00 - 17:00 <span class="kapital">wib</span></li>
+                        <li>(pertunjukan malam khusus pentas wayang / tari : sabtu pukul 19:30 - 21:30 <span class="kapital">wib</span>)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- MEDIA SOSIAL -->
+            <section class="wadah-sosmed">
+                <h2>kunjungi sosial media kami di :</h2>
+                <a class="kartu-sosmed" href="#" target="_blank">
+                    <h3>instagram :</h3>
+                    <p>@bumikandung_desawisata</p>
+                </a>
+                <a class="kartu-sosmed" href="#" target="_blank">
+                    <h3>tiktok :</h3>
+                    <p>@bumikandung.culture</p>
+                </a>
+                <a class="kartu-sosmed" href="#" target="_blank">
+                    <h3>youtube :</h3>
+                    <p>bumi kandung cultural channel</p>
+                </a>
+                <a class="kartu-sosmed" href="#" target="_blank">
+                    <h3>website resmi :</h3>
+                    <p>www.bumikandung.com</p>
+                </a>
+            </section>
+
+            <!-- FORMULIR -->
+            <section class="formulir">
+                <form action="/data.php" method="POST">
+                    <div class="kepuasan">
+                        <p>apakah anda puas?</p>
+                        <label>
+                            <input type="radio" name="kepuasan" value="tidak-puas" /> tidak puas
+                        </label>
+                        <label>
+                            <input type="radio" name="kepuasan" value="biasa-saja" /> biasa saja
+                        </label>
+                        <label>
+                            <input type="radio" name="kepuasan" value="sangat-puas" /> sangat puas
+                        </label>
+                    </div>
+
+                    <div class="ulasan">
+                        <label for="ulasan">tulis ulasan anda:</label>
+                        <textarea 
+                               id="ulasan" 
+                               name="ulasan" 
+                               rows="5" 
+                               cols="40" 
+                               placeholder="Beri Ulasan Anda ...." 
+                            ></textarea>
+                    </div>
+
+                    <div>
+                        <p>area yang dikunjungi :</p>
+                        <label><input type="checkbox" name="area" value="karawitan" /> karawitan dan gamelan</label>
+                        <label><input type="checkbox" name="area" value="homestay" /> homestay joglo</label>
+                        <label><input type="checkbox" name="area" value="gerabah" /> gerabah tanah liat</label>
+                        <label><input type="checkbox" name="area" value="batik" /> batik tulis</label>
+                    </div>
+
+                    <div>
+                        <label for="kota">dari mana asal anda? </label>
+                        <select id="kota" name="kota">
+                            <option value="">-- pilih kota --</option>
+                            <option value="surabaya">surabaya</option>
+                            <option value="semarang">semarang</option>
+                            <option value="yogyakarta">yogyakarta</option>
+                            <option value="jakarta">jakarta</option>
+                        </select>
+                    </div>
+                </form>
+            </section>
+
+            <!-- PETA LOKASI -->
+            <section class="peta">
+                <iframe 
+                    width="100%" 
+                    height="350" 
+                    src="https://maps.google.com/maps?q=Boyolali,+Jawa+Tengah&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </section>
+        </main>
+
+        <!-- HALAMAN BAWAH WEB -->
+        <footer class="halaman-bawah">
+            <p>&copy; 2026 <span class="kapital">bumi kandung</span>. hak cipta dilindungi.</p>
+        </footer>
+    </body>
+</html>

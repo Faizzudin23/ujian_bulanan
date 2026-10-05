@@ -1,0 +1,275 @@
+/* 1. REGULASI UMUM (RESET & FONT SYSTEM) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #fcfbf7;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Pengaturan judul agar memakai Google Font Playfair Display */
+h1, h2, h3, .nama-bisnis {
+    font-family: 'Playfair Display', serif;
+    color: #4a2c11;
+    text-transform: capitalize;
+}
+
+/* Utilitas Transformasi Teks */
+.kapital {
+    text-transform: uppercase;
+}
+
+.asing {
+    font-style: italic;
+}
+
+/* 2. HEADER & NAVIGASI (HALAMAN UTAMA) */
+.halaman-utama {
+    background-color: #5c3818;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.halaman-utama .nama-bisnis {
+    color: #f4e8c1;
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.halaman-utama p {
+    font-size: 14px;
+    color: #e0d0b0;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+
+/* Navigasi */
+.link-halaman ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.link-halaman a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 5px 12px;
+    border-radius: 4px;
+}
+
+.link-halaman a:hover {
+    background-color: #804e21;
+    color: #f4e8c1;
+}
+
+/* 3. UTAMA / CONTAINER ISI HALAMAN */
+.isi-halaman {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 1px solid #e2d7c5;
+    border-radius: 8px;
+}
+
+section h2 {
+    border-bottom: 2px solid #5c3818;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+/* 4. TAMPILAN HALAMAN INDEX (BERANDA) */
+/* Profil Usaha & Deskripsi */
+#nama-usaha {
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+#tagline {
+    font-style: italic;
+    color: #7a5229;
+    margin-bottom: 8px;
+}
+
+/* Kartu Fasilitas */
+.kartu-fasilitas {
+    background-color: #faf6ee;
+    border-left: 4px solid #804e21;
+    padding: 12px 15px;
+    margin-top: 12px;
+}
+
+.jenis-fasilitas {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+/* Galeri Foto */
+.kontainer-galeri {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.kontainer-galeri img {
+    width: 100%;
+    max-width: 260px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+/* Frame Video & Audio */
+.bingkai-video, .video, .audio {
+    margin-top: 15px;
+    text-align: center;
+}
+
+iframe, video {
+    max-width: 100%;
+    border-radius: 6px;
+}
+
+audio {
+    width: 100%;
+    max-width: 500px;
+}
+
+/* 5. TAMPILAN HALAMAN KATALOG (TABEL & ULASAN) */
+/* Tabel Harga Paket */
+.harga-paket table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.harga-paket th, .harga-paket td {
+    border: 1px solid #dcd0bc;
+    padding: 12px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.harga-paket th {
+    background-color: #5c3818;
+    color: #ffffff;
+}
+
+.harga-paket td ul {
+    padding-left: 18px;
+}
+
+/* Kotak Ulasan */
+.kotak-ulasan {
+    background-color: #fdfbf7;
+    border: 1px solid #e8dec8;
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 12px;
+}
+
+.pengulas {
+    font-size: 16px;
+    color: #5c3818;
+}
+
+.ulasan {
+    font-style: italic;
+    color: #555555;
+    margin-top: 5px;
+}
+
+/* 6. TAMPILAN HALAMAN KONTAK (INFORMASI, SOSMED & FORMULIR) */
+/* Alamat & Informasi */
+.kotak-informasi {
+    margin-bottom: 12px;
+}
+
+.judul-info {
+    font-weight: bold;
+    color: #5c3818;
+    text-transform: capitalize;
+}
+
+.kotak-informasi a {
+    color: #804e21;
+    text-decoration: none;
+}
+
+.kotak-informasi a:hover {
+    text-decoration: underline;
+}
+
+/* Kartu Sosmed */
+.kartu-sosmed {
+    display: block;
+    background-color: #faf6ee;
+    border: 1px solid #e0d0b0;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+}
+
+.kartu-sosmed:hover {
+    background-color: #f0e4cc;
+}
+
+/* Styling Formulir Sederhana */
+.formulir form div {
+    margin-bottom: 15px;
+}
+
+.formulir p, .formulir label {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.formulir label {
+    display: inline-block;
+    font-weight: normal;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.formulir textarea, .formulir select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+/* Section Peta */
+.peta iframe {
+    border-radius: 6px;
+}
+
+/*    7. FOOTER (HALAMAN BAWAH)  */
+.halaman-bawah {
+    background-color: #3d240f;
+    color: #d1c2a5;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    margin-top: 30px;
+}
